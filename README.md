@@ -11,7 +11,7 @@ Forud for den endelige eksamen i programmering og teknologi på 3. semester af d
 ## Afklarende informationer
 * Mine noter og tekstbaserede besvarelser ligger under mappen *"dokumenter"*.
 * Al den programmeringsmæssige udvikling ligger under mappen *"eksamen"*.
-* Første udkast til idé af databasedesign er præsenteret som JSON i mappen *"dokumenter*.
+* Første udkast til idé af databasedesign er præsenteret som JSON i mappen *"dokumenter"*.
 * Jeg anvender GUI *Robo 3T* til at håndtere min lokale connection til *MongoDB*, der dermed er mit databasevalg.
 * På *localhost:3000* vises en oversigt over mulige endpoints og URL'er i systemet.
 

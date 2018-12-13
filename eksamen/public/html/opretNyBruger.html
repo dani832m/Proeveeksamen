@@ -1,0 +1,41 @@
+<!--
+    Formen i denne HTML-fil muliggør, at der kan tilføjes nye documents
+    til den valgte collection i den lokale database.
+-->
+
+<!-- HTML5 -->
+<!DOCTYPE html>
+<html lang="da-DK">
+<head>
+    <meta charset="UTF-8">
+    <title>BEC Bank | Opret ny bruger i systemet</title>
+    <!-- Meta Content -->
+    <meta name="description" content="Opret ny bruger i systemet.">
+    <meta name="author" content="Daniel Lyck">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styling -->
+    <link rel="stylesheet" href="../stylesheets/style.css">
+</head>
+<body>
+    <h1>Opret ny bruger i systemet</h1>
+    <p style="margin-bottom: 35px;">Udfyld formularen herunder for at tilføje en ny bruger til systemet.</p>
+    <!-- POST request der håndteres i konti.js -->
+    <form action="../konti/post" method="post">
+        <label class="label">ID</label>
+        <input class="inputField" type="number" placeholder="F.eks. 10" name="Uid" required><br>
+        <label class="label">Medarbejder i banken</label>
+        <input type="radio" name="medarbejder" value="true" checked> Ja<br>
+        <input type="radio" name="medarbejder" value="false"> Nej<br>
+        <label class="label">Kunde i banken</label>
+        <input type="radio" name="kunde" value="true" checked> Ja<br>
+        <input type="radio" name="kunde" value="false"> Nej<br>
+        <label class="label">Fulde navn</label>
+        <input class="inputField" type="text" placeholder="F.eks. Frans Fransen" name="fuldenavn" required><br>
+        <label class="label">Kodeord</label>
+        <input class="inputField" type="password" placeholder="Vælg et kodeord" name="kodeord" required><br>
+        <br>
+        <button class="submitBtn" type="submit">Opret bruger</button>
+    </form>
+    <a href="/"><button class="submitBtn" style="margin-left: 10px;">Gå til index-siden</button></a>
+</body>
+</html>

@@ -1,0 +1,4 @@
+**** Følgende repræsenterer udelukkende noter til mig selv ****
+
+Hvis Robo 3T ikke vil connecte i første omgang, så start Mongo gennem terminalen først:
+cmd -> cd C:\Program Files\MongoDB\Server\4.0\bin -> mongod

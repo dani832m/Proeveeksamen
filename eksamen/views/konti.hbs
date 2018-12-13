@@ -1,0 +1,41 @@
+<h1>Tabel over alle registrerede konti i systemet</h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Medarbejder</th>
+        <th>Kunde</th>
+        <th>Fulde navn</th>
+        <th>Kontonummer</th>
+        <th>Kontonavn</th>
+        <th>Saldo (DKK)</th>
+        <th>Rente (%)</th>
+        <th>Kodeord</th>
+        <th>Håndter konto</th>
+    </tr>
+    {{#each konti}}
+    <tr>
+        <td>{{Uid}}</td>
+        <td>{{medarbejder}}</td>
+        <td>{{kunde}}</td>
+        <td>{{fuldenavn}}</td>
+        <td>{{kontonummer}}</td>
+        <td>{{kontonavn}}</td>
+        <td>{{saldo}}</td>
+        <td>{{rente}}</td>
+        <td>{{kodeord}}</td>
+        <td style="text-align: center;">
+            <form action="/konti/delete/{{Uid}}" method="POST">
+                <button class="deleteBtn">Slet konto</button>
+            </form>
+        </td>
+    </tr>
+    {{/each}}
+</table>
+<br>
+<nav>
+    <ul>
+        <li><a href="/">Gå til index-siden</a>.</li>
+        <li><a href="/html/opretNyBruger.html">Opret ny bruger i systemet</a>.</li>
+        <li><a href="/html/redigerData.html">Rediger data for konto/bruger i systemet</a>.</li>
+    </ul>
+</nav>

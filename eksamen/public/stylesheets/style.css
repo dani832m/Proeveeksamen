@@ -1,0 +1,78 @@
+body {
+  margin: 30px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-shadow: 0 0 2px rgb(185, 185, 185);
+  background-color: rgb(231, 241, 231);
+}
+table {
+  border-collapse: collapse; /* Smelter sammen til én border */
+  width: 100%;
+  box-shadow: 3px 3px 10px rgb(145, 145, 145);
+}
+th, td {
+  border: 1px solid rgb(0, 0, 0);
+  text-align: left;
+  padding: 10px;
+}
+th {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+td {
+  color: rgb(0, 0, 0);
+  background-color: rgb(238, 238, 238);
+}
+a:link, a:visited {
+  text-decoration: none;
+  color: rgb(4, 78, 37);
+  font-size: 17px;
+}
+a:hover, a:active {
+  text-decoration: underline;
+  color: rgb(18, 155, 25)
+}
+form {
+  margin: 10px;
+}
+.label {
+  font-weight: bold;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: rgb(4, 78, 37);
+}
+.inputField {
+  padding: 8px;
+  margin: 5px;
+  min-width: 200px;
+}
+.submitBtn {
+  padding: 15px;
+  min-width: 220px;
+  background-color: rgb(2, 29, 2);
+  border: 0;
+  border-radius: 7px;
+  color: rgb(231, 241, 231);
+  font-size: 16px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.deleteBtn {
+  padding: 10px;
+  background-color: rgb(2, 29, 2);
+  border: 0;
+  border-radius: 7px;
+  color: rgb(231, 241, 231);
+  font-size: 14px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#mainHeading {
+  display: none;
+}
+#mainContent {
+  background-color: rgb(247, 247, 247);
+  width: 650px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgb(184, 184, 184);
+  display: none;
+}

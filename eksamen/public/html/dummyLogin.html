@@ -1,0 +1,43 @@
+<!--
+    Dette HTML-dokument indeholder et Dummy-Login.
+    Bemærk: Alt er hardcoded dummy-data.
+-->
+
+<!-- HTML5 -->
+<!DOCTYPE html>
+<html lang="da-DK">
+<head>
+    <meta charset="UTF-8">
+    <title>BEC Bank | Log ind i systemet</title>
+    <!-- Meta Content -->
+    <meta name="description" content="Log ind for at fortsætte til systemet.">
+    <meta name="author" content="Daniel Lyck">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styling -->
+    <link rel="stylesheet" href="../stylesheets/style.css">
+</head>
+<body>
+    <h1>Log ind i systemet</h1>
+    <p>For at se en oversigt over alle konti skal du først logge ind med ID og kodeord.</p>
+    <form name="login">
+        <label class="label">ID</label>
+        <input class="inputField" type="number" placeholder="F.eks. 1" name="Uid" required><br>
+        <label class="label">Kodeord</label>
+        <input class="inputField" type="password" placeholder="F.eks. 123" name="kodeord" required><br>
+        <br>
+        <input class="submitBtn" type="button" onclick="check(this.form)" value="Log ind">
+    </form>
+    <a href="/"><button class="submitBtn" style="margin-left: 10px;">Gå til index-siden</button></a>
+    <script>
+        // Funktion, der tjekker om værdien i input-felterne matcher det hardcodede pair
+        function check(form) {
+            if (form.Uid.value == "1" && form.kodeord.value == "123") {
+                window.location.href = "../konti";
+            }
+            else {
+                alert("ID og kodeord matcher ikke! Prøv igen.");
+            }
+        }
+    </script>
+</body>
+</html>

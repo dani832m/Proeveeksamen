@@ -1,0 +1,95 @@
+<!--
+    Dette HTML-dokument indeholder mit første udkast til
+    layout af et samlet overblik over konti i banksystemet.
+
+    Bemærk: Alt er hardcoded dummy-data.
+-->
+
+<!-- HTML5 -->
+<!DOCTYPE html>
+<html lang="da-DK">
+<head>
+    <meta charset="UTF-8">
+    <title>BEC Bank | Liste over konti i systemet</title>
+    <!-- Meta Content -->
+    <meta name="description" content="Viser en oversigt over alle konti i systemet.">
+    <meta name="author" content="Daniel Lyck">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Internal Styling -->
+    <style>
+    body {
+        margin: 30px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-shadow: 0 0 2px rgb(185, 185, 185);
+        background-color: rgb(231, 241, 231);
+    }
+    table {
+        border-collapse: collapse; /* Smelter sammen til én border */
+        width: 100%;
+        box-shadow: 3px 3px 10px rgb(145, 145, 145);
+    }
+    th, td {
+        border: 1px solid rgb(0, 0, 0);
+        text-align: left;
+        padding: 10px;
+    }
+    th {
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+    }
+    td {
+        color: rgb(0, 0, 0);
+        background-color: rgb(238, 238, 238);
+    }
+    </style>
+</head>
+<body>
+    <h1>Tabel over alle registrerede konti i systemet</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Medarbejder</th>
+            <th>Kunde</th>
+            <th>Fulde navn</th>
+            <th>Kontonummer</th>
+            <th>Kontonavn</th>
+            <th>Saldo (DKK)</th>
+            <th>Rente (%)</th>
+            <th>Kodeord</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>true</td>
+            <td>true</td>
+            <td>Ole Olsen</td>
+            <td>12345678</td>
+            <td>Lønkonto</td>
+            <td>123</td>
+            <td>2,0</td>
+            <td>123</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>false</td>
+            <td>true</td>
+            <td>Bent Bentsen</td>
+            <td>23456789</td>
+            <td>Lønkonto</td>
+            <td>10000</td>
+            <td>2,1</td>
+            <td>321</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>true</td>
+            <td>false</td>
+            <td>Henrik Henriksen</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>777</td>
+        </tr>
+    </table>
+</body>
+</html>

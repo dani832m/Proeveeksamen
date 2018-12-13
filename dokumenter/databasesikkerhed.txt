@@ -1,0 +1,4 @@
+Svar på spg. 1:
+
+* Metode 1: Anvend en NoSQL-database. Eksempelvis MongoDB.
+* Metode 2: Gøre brug af prepared statements med parameterized queries og/eller lave input-validering både front-end og back-end.

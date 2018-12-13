@@ -1,0 +1,12 @@
+Svar på spg. 2:
+
+For at sikre brugerens data kan det være en god idé at kryptere så meget indhold som muligt i databasen.
+Eventuel hashing/salting af kodeord og andre følsomme oplysninger kan være en god ide, da det vil efterlade
+noget nær ubrugelig information til en potentiel hacker.
+
+Det kan også være en god idé at implementere noget overvågning med alarmudløsning, hvis der skulle
+komme ubudne gæster. En cloud-baseret db-løsning, hvor al dataen ikke ligger på samme server,
+kan også være en god idé, i og med et hackerangreb dermed ikke vil ramme hele kartoteket, men kun
+dele af det.
+
+Desuden kan en SQL-injection også undgås ved IKKE at anvende en SQL-baseret database.

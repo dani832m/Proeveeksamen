@@ -1,0 +1,19 @@
+<h1 id="mainHeading">Oversigt over <em>endpoints</em> i systemet</h1>
+<div id="mainContent">
+    <nav>
+        <ul>
+            <li><a href="konti">Tabel over alle registrerede konti i systemet (HTML View)</a></li>
+            <li><a href="konti/json">Viser alle konti i systemet i JSON-format (GET Request)</a></li>
+            <li><a href="html/opretNyBruger.html">Opret en ny bruger i systemet (POST Request)</a></li>
+            <li><a href="html/redigerData.html">Rediger data for en specifik bruger eller konto (POST/PUT Request)</a></li>
+            <li><a href="html/dummyLogin.html">Log ind i systemet med ID og kodeord (Dummy Login)</a></li>
+        </ul>
+    </nav>
+</div>
+<script>
+    // jQuery-funktion, der får indholdet til at fade ind på siden
+    $(document).ready(function() {
+        $("#mainHeading").fadeIn(500);
+        $("#mainContent").fadeIn(700);
+    });
+</script>

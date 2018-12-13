@@ -1,0 +1,37 @@
+{
+    "konti": [
+        {
+            "Uid": "1",
+            "medarbejder": "true",
+            "kunde": "true",
+            "fuldenavn": "Ole Olsen",
+            "kontonummer": "12345678",
+            "kontonavn": "Lønkonto",
+            "saldo": "123",
+            "rente": "2,0",
+            "kodeord": "123"
+        },
+        {
+            "Uid": "2",
+            "medarbejder": "false",
+            "kunde": "true",
+            "fuldenavn": "Bent Bentsen",
+            "kontonummer": "23456789",
+            "kontonavn": "Lønkonto",
+            "saldo": "10000",
+            "rente": "2,1",
+            "kodeord": "321"
+        },
+        {
+            "Uid": "3",
+            "medarbejder": "true",
+            "kunde": "false",
+            "fuldenavn": "Henrik Henriksen",
+            "kontonummer": "",
+            "kontonavn": "",
+            "saldo": "",
+            "rente": "",
+            "kodeord": "777"
+        }
+    ]
+}

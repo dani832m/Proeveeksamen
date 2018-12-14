@@ -1,5 +1,5 @@
 # Prøveeksamen i programmering og teknologi
-Forud for den endelige eksamen i programmering og teknologi på 3. semester af datamatikeruddannelsen, blev der afviklet en prøveeksamen bestående af et opgavesæt, der havde visse ligheder med den rigtige eksamensopgave. Dette repository indeholder min besvarelse af prøveeksamenen.
+Forud for den endelige eksamen i programmering og teknologi på 3. semester af datamatikeruddannelsen, blev der afviklet en prøveeksamen bestående af et opgavesæt, der havde visse ligheder med den rigtige eksamensopgave. Dette repository indeholder min besvarelse af prøveeksamenen. Opgaveformuleringen kan findes i dette repos [Wiki-sektion](https://github.com/dani832m/Proeveeksamen/wiki "Wiki").
 
 * **Afviklet:** d. 13/12-2018.
 * **Sted:** [EASJ](https://www.easj.dk/ "EASJ's Hjemmeside"), Næstved.

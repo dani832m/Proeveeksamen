@@ -22,25 +22,25 @@
     <!-- POST/PUT request der håndteres i konti.js -->
     <form action="../konti/put" method="post">
         <label class="label">ID</label>
-        <input class="inputField" type="number" placeholder="Gyldigt ID er vigtigt!" name="Uid" required><br>
+        <input class="inputField" type="number" placeholder="Gyldigt ID er vigtigt!" name="UidPUT" required><br>
         <label class="label">Medarbejder i banken</label>
-        <input type="radio" name="medarbejder" value="true" checked> Ja<br>
-        <input type="radio" name="medarbejder" value="false"> Nej<br>
+        <input type="radio" name="medarbejderPUT" value="true" checked> Ja<br>
+        <input type="radio" name="medarbejderPUT" value="false"> Nej<br>
         <label class="label">Kunde i banken</label>
-        <input type="radio" name="kunde" value="true" checked> Ja<br>
-        <input type="radio" name="kunde" value="false"> Nej<br>
+        <input type="radio" name="kundePUT" value="true" checked> Ja<br>
+        <input type="radio" name="kundePUT" value="false"> Nej<br>
         <label class="label">Fulde navn</label>
-        <input class="inputField" type="text" placeholder="F.eks. Frans Fransen" name="fuldenavn" required><br>
+        <input class="inputField" type="text" placeholder="F.eks. Frans Fransen" name="fuldenavnPUT" required><br>
         <label class="label">Kontonummer</label>
-        <input class="inputField" type="number" placeholder="F.eks. 87654321" name="kontonummer" required><br>
+        <input class="inputField" type="number" placeholder="F.eks. 87654321" name="kontonummerPUT" required><br>
         <label class="label">Kontonavn</label>
-        <input class="inputField" type="text" placeholder="F.eks. Lønkonto" name="kontonavn" required><br>
+        <input class="inputField" type="text" placeholder="F.eks. Lønkonto" name="kontonavnPUT" required><br>
         <label class="label">Saldo i DKK</label>
-        <input class="inputField" type="number" placeholder="F.eks. 1000" name="saldo" required><br>
+        <input class="inputField" type="number" placeholder="F.eks. 1000" name="saldoPUT" required><br>
         <label class="label">Rente i procent</label>
-        <input class="inputField" type="number" step="any" placeholder="F.eks. 2,1" name="rente" required><br>
+        <input class="inputField" type="number" step="any" placeholder="F.eks. 2,1" name="rentePUT" required><br>
         <label class="label">Kodeord</label>
-        <input class="inputField" type="password" placeholder="Vælg nyt kodeord" name="kodeord" required><br>
+        <input class="inputField" type="password" placeholder="Vælg nyt kodeord" name="kodeordPUT" required><br>
         <br>
         <button class="submitBtn" type="submit">Redigér data</button>
     </form>

@@ -85,7 +85,7 @@ router.post('/delete/:Uid', function (req, res) {
 /*
   5. Redigerer en specifik bruger/konto fra databasen (PUT Request)
 */
-router.put('/put', function (req, res) {
+router.post('/put', function (req, res) {
   MongoClient.connect(url, function (err, db) {
     if (err) throw err;
     var dbo = db.db("eksamen");

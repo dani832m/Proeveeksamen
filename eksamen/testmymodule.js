@@ -1,3 +1,7 @@
+/*
+    Bemærk: Modulet er kun konsolbaseret.
+*/
+
 // Inkluderer mit eget modul, der er lokaliseret i 'node_modules'
 var myModule = require('mymodule');
 

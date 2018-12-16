@@ -15,35 +15,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Styling -->
     <link rel="stylesheet" href="../stylesheets/style.css">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Dynamic Data-Script -->
+    <script src="../javascripts/visNyDataDynamisk.js"></script>
 </head>
 <body>
     <h1>Rediger bruger/konto i banksystemet</h1>
-    <p style="margin-bottom: 35px;">Udfyld formularen herunder for at redigere en specifik konto/bruger i systemet.</p>
-    <!-- POST/PUT request der håndteres i konti.js -->
-    <form action="../konti/put" method="post">
-        <label class="label">ID</label>
-        <input class="inputField" type="number" placeholder="Gyldigt ID er vigtigt!" name="UidPUT" required><br>
-        <label class="label">Medarbejder i banken</label>
-        <input type="radio" name="medarbejderPUT" value="true" checked> Ja<br>
-        <input type="radio" name="medarbejderPUT" value="false"> Nej<br>
-        <label class="label">Kunde i banken</label>
-        <input type="radio" name="kundePUT" value="true" checked> Ja<br>
-        <input type="radio" name="kundePUT" value="false"> Nej<br>
-        <label class="label">Fulde navn</label>
-        <input class="inputField" type="text" placeholder="F.eks. Frans Fransen" name="fuldenavnPUT" required><br>
-        <label class="label">Kontonummer</label>
-        <input class="inputField" type="number" placeholder="F.eks. 87654321" name="kontonummerPUT" required><br>
-        <label class="label">Kontonavn</label>
-        <input class="inputField" type="text" placeholder="F.eks. Lønkonto" name="kontonavnPUT" required><br>
-        <label class="label">Saldo i DKK</label>
-        <input class="inputField" type="number" placeholder="F.eks. 1000" name="saldoPUT" required><br>
-        <label class="label">Rente i procent</label>
-        <input class="inputField" type="number" step="any" placeholder="F.eks. 2,1" name="rentePUT" required><br>
-        <label class="label">Kodeord</label>
-        <input class="inputField" type="password" placeholder="Vælg nyt kodeord" name="kodeordPUT" required><br>
-        <br>
-        <button class="submitBtn" type="submit">Redigér data</button>
-    </form>
-    <a href="/"><button class="submitBtn" style="margin-left: 10px;">Gå til index-siden</button></a>
+    <p>Udfyld formularen herunder for at redigere en specifik konto/bruger i systemet.</p>
+    <div class="formDiv">
+        <!-- POST/PUT request der håndteres i konti.js -->
+        <form id="redigerDataForm" action="../konti/put" method="post">
+            <label class="label">ID</label>
+            <input id="nyDataInput-Uid" class="inputField" type="number" placeholder="Gyldigt ID er vigtigt!" name="UidPUT" required><br>
+            <label class="label">Medarbejder i banken</label>
+            <input type="radio" name="medarbejderPUT" value="true" checked> Ja<br>
+            <input type="radio" name="medarbejderPUT" value="false"> Nej<br>
+            <label class="label">Kunde i banken</label>
+            <input type="radio" name="kundePUT" value="true" checked> Ja<br>
+            <input type="radio" name="kundePUT" value="false"> Nej<br>
+            <label class="label">Fulde navn</label>
+            <input id="nyDataInput-Fuldenavn" class="inputField" type="text" placeholder="F.eks. Frans Fransen" name="fuldenavnPUT" required><br>
+            <label class="label">Kontonummer</label>
+            <input class="inputField" type="number" placeholder="F.eks. 87654321" name="kontonummerPUT" required><br>
+            <label class="label">Kontonavn</label>
+            <input class="inputField" type="text" placeholder="F.eks. Lønkonto" name="kontonavnPUT" required><br>
+            <label class="label">Saldo i DKK</label>
+            <input class="inputField" type="number" placeholder="F.eks. 1000" name="saldoPUT" required><br>
+            <label class="label">Rente i procent</label>
+            <input class="inputField" type="number" step="any" placeholder="F.eks. 2,1" name="rentePUT" required><br>
+            <label class="label">Kodeord</label>
+            <input class="inputField" type="password" placeholder="Vælg nyt kodeord" name="kodeordPUT" required><br>
+            <br>
+            <button class="submitBtn" type="submit">Redigér data</button>
+        </form>
+        <a href="/"><button class="submitBtn" style="margin-left: 10px;">Gå til index-siden</button></a><br><br>
+    </div>
+    <!-- Tekstbaseret div, der indeholder data fra input-felterne -->
+    <div id="dynamicDataDiv">
+        <p>Du er ved at ændre data for:</p>
+        <ul>
+            <li><b>ID nummer:</b> <span id="nyDataTekst-Uid">Intet angivet</span></li>
+            <li><b>Fulde navn:</b> <span id="nyDataTekst-Fuldenavn">Intet angivet</span></li>
+            <p id="nulstilData" style="cursor: pointer;">Nulstil alle felter?</p>
+        </ul>
+    </div>
 </body>
 </html>

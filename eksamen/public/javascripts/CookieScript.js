@@ -1,3 +1,7 @@
+/*
+  Inkluderes i 'layout.hbs'
+*/
+
 // Sætter en cookie, der viser antal af besøg på siden.
 var setCookie = Number(document.cookie);
     

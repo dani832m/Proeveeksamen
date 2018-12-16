@@ -19,23 +19,33 @@
 <body>
     <h1>Log ind i systemet</h1>
     <p>For at se en oversigt over alle konti skal du først logge ind med ID og kodeord.</p>
-    <form name="login">
-        <label class="label">ID</label>
-        <input class="inputField" type="number" placeholder="F.eks. 1" name="Uid" required><br>
-        <label class="label">Kodeord</label>
-        <input class="inputField" type="password" placeholder="F.eks. 123" name="kodeord" required><br>
-        <br>
-        <input class="submitBtn" type="button" onclick="check(this.form)" value="Log ind">
-    </form>
-    <a href="/"><button class="submitBtn" style="margin-left: 10px;">Gå til index-siden</button></a>
+    <div class="formDiv">
+        <form name="login">
+            <label class="label">ID</label>
+            <input class="inputField" type="number" placeholder="F.eks. 1" name="Uid" required><br>
+            <label class="label">Kodeord</label>
+            <input class="inputField" type="password" placeholder="F.eks. 123" name="kodeord" required><br>
+            <br>
+            <input class="submitBtn" type="button" onclick="check(this.form)" value="Log ind">
+        </form>
+        <a href="/"><button class="submitBtn" style="margin-left: 10px;">Gå til index-siden</button></a><br><br>
+    </div>
+    <div id="dynamicDataDiv">
+        <p><b>Fejlbesked:</b></p>
+        <p id="fejlbesked">Ingen fejl lige nu.</p>
+    </div>
     <script>
         // Funktion, der tjekker om værdien i input-felterne matcher det hardcodede pair
         function check(form) {
             if (form.Uid.value == "1" && form.kodeord.value == "123") {
+                document.getElementById("fejlbesked").innerHTML = "Logger ind...";
                 window.location.href = "../konti";
             }
+            else if (form.Uid.value == "" || form.kodeord.value == "") {
+                document.getElementById("fejlbesked").innerHTML = "Du skal udfylde begge felter!";
+            }
             else {
-                alert("ID og kodeord matcher ikke! Prøv igen.");
+                document.getElementById("fejlbesked").innerHTML = "ID og kodeord matcher ikke!";
             }
         }
     </script>

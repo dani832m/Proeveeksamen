@@ -77,9 +77,12 @@ form {
 #mainHeading {
   display: none;
 }
+#mainParagraph {
+  display: none;
+}
 #mainContent {
   background-color: rgb(247, 247, 247);
-  width: 650px;
+  width: 700px;
   padding: 5px;
   border: 1px rgb(4, 78, 37) solid;
   border-radius: 10px;

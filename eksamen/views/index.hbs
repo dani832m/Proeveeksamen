@@ -1,20 +1,23 @@
-<h1 id="mainHeading">Oversigt over systemets funktionalitet</h1>
+<h1 id="mainHeading">Oversigt over funktionalitet</h1>
+<p id="mainParagraph">Herunder er alle systemets endpoints og URL'er repræsenteret, inkl. beskrivelse af dem.</p>
 <div id="mainContent">
     <!-- Navigation -->
     <nav>
         <ul>
-            <li><a href="konti">Tabel over alle registrerede konti i systemet (HTML View)</a></li>
-            <li><a href="konti/json">Viser alle konti i systemet i JSON-format (GET Request)</a></li>
-            <li><a href="html/opretNyBruger.html">Opret en ny bruger i systemet (POST Request)</a></li>
-            <li><a href="html/redigerData.html">Rediger data for en specifik bruger eller konto (POST/PUT Request)</a></li>
-            <li><a href="html/dummyLogin.html">Log ind i systemet med ID og kodeord (Dummy Login)</a></li>
+            <li><a href="html/statiskTableView.html"><b>HTML-table med dummy data</b> - Statisk tabel over alle konti i systemet</a>.</li>
+            <li><a href="konti"><b>HTML-table forbundet til DB</b> - Dynamisk tabel over alle konti i systemet</a>.</li>
+            <li><a href="konti/json"><b>GET Request</b> - Viser alle konti i systemet i JSON-format</a>.</li>
+            <li><a href="html/opretNyBruger.html"><b>POST Request</b> - Opret en ny bruger i systemet vha. HTML-form</a>.</li>
+            <li><a href="html/redigerData.html"><b>PUT Request</b> - Rediger data for en specifik bruger/konto vha. HTML-form</a>.</li>
+            <li><a href="html/dummyLogin.html"><b>Dummy Login</b> - Log ind i systemet med ID og kodeord</a>.</li>
         </ul>
     </nav>
 </div>
 <script>
-    // jQuery-funktion, der får indholdet til at fade ind på siden
+    // jQuery-funktionalitet, der får indholdet til at fade ind på siden
     $(document).ready(function() {
         $("#mainHeading").fadeIn(500);
+        $("#mainParagraph").fadeIn(600);
         $("#mainContent").fadeIn(700);
     });
 </script>

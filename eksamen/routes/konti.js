@@ -15,7 +15,7 @@ router.get('/', function (req, res, next) { // Route handler på roden
     dbo.collection("bec-bank").find({}).toArray(function (err, result) {
       if (err) throw err;
       var obj = {}; // Nyt objekt uden indhold
-      obj.title = 'BEC Bank | Liste over konti i systemet';
+      obj.title = 'BEC Bank | Tabel over alle konti i systemet';
       obj.konti = result; // Angiver, at respons fra db skal tilføjes objektet
       res.render('konti', obj);
       db.close(); // Lukker forbindelse til database
